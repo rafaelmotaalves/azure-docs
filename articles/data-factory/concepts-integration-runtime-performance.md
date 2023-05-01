@@ -55,7 +55,7 @@ Dataflow divides the data into partitions and transforms it using different proc
 
 While increasing the shuffle partitions, make sure data is spread across well. A rough number is to have  approximately 1.5 GB of data per partition. If data is skewed, increasing the "Shuffle partitions" won't be helpful. For example, if you have 500 GB of data, having a value between 400 to 500 should work. Default limit for shuffle partitions is 200 that works well for approximately 300 GB of data.
 
-Here are the steps on how it's  set in a custom integration runtime. You can't  set it for autoresolve integrtaion runtime.
+Here are the steps on how it's  set in a custom integration runtime. You can't  set it for autoresolve integration runtime.
 
 1. From ADF portal under **Manage**, select a custom integration run time and you go to edit mode.
 2. Under dataflow run time tab, go to **Compute Custom Properties** section.
